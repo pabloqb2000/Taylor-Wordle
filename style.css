@@ -98,3 +98,22 @@ button {
   background-color: #333333c0;
 }
 
+.error {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-2deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(-3deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(2deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(3deg); }
+  90% { transform: rotate(-2deg); }
+  100% { transform: rotate(1deg); }
+}
+

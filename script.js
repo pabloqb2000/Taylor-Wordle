@@ -125,7 +125,14 @@ function check() {
     }
 
     if (userWord.length != word.length) {
-        showAlert('Not all letters contain a value');
+        const rowElem = $('.letter-row').eq(row);
+        rowElem.children().each((i,e) => {
+            $(e).removeClass("error"); 
+            rowElem[0].removeChild(e);
+            rowElem[0].appendChild(e);
+            if(e.innerText == '')
+                $(e).addClass("error"); 
+        });
         col = startCol;
         return;
     }
