@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700;900&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 html,
 body {
   font-size: 16px;
@@ -15,8 +15,8 @@ body {
 
 .letter {
   background-color: #3f3f3f;
-  min-width: 60px;
-  min-height: 60px;
+  width: 60px;
+  height: 60px;
   margin: 5px 5px;
   border-radius: 5px;
   font-size: 30px;
@@ -24,20 +24,31 @@ body {
   align-items: center;
   justify-content: center;
   border: solid 1px rgb(202, 202, 202);
-  transition-duration: 1s;
+  transition-duration: 0.2s;
+}
+
+.toast-header .l.letter {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: white;
+  margin: 1px;
 }
 
 .letter.none {
   background-color: #636363;
   border: none;
+  transition-duration: 1s;
 }
 .letter.correct {
   background-color: #28a02e;
   border: none;
+  transition-duration: 1s;
 }
 .letter.contained {
   background-color: #d48b36;
   border: none;
+  transition-duration: 1s;
 }
 .letter.selected {
   border: solid 2px #d48b36;
@@ -49,8 +60,8 @@ button {
 
 .key {
   background-color: #3f3f3f;
-  min-width: 30px;
-  min-height: 45px;
+  width: 30px;
+  height: 45px;
   margin: 5px 2px;
   border-radius: 5px;
   font-size: 15px;
@@ -64,3 +75,26 @@ button {
 .key:hover  {
   background-color: #5b5b5b;
 }
+
+.key.del {
+  background-color: #4d2e2e;
+  margin-right: 10px;
+}
+
+.key.enter {
+  background-color: #2e4d30;
+  margin-left: 10px;
+}
+
+.modal {
+  color: rgb(31, 31, 31);
+}
+
+.modal-content {
+  background-color: white;
+}
+
+.toast {
+  background-color: #333333c0;
+}
+
